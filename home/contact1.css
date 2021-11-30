@@ -1,0 +1,131 @@
+body{
+    background-color: #3636a1;
+    margin: 0px;
+    font-family: monospace;
+}
+
+#background{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    filter: blur(2px);
+}
+
+#topwaves{
+    width: 100%;
+}
+
+#body{
+    width: 80%;
+    height: 600px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+
+}
+
+#img1{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(52, 120, 197);
+    filter: blur(0px);
+    border-radius: 10px;
+}
+
+#img2{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-image: url(photos/profile-user.png);
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    position: fixed;
+    left: 43%;
+    top: 170px;
+    border: 5px solid white;
+
+
+}
+
+#h1{
+    position: relative;
+    top: 70px;
+    left: -40px;
+
+}
+
+#body h4{
+    font-size: 18px;
+    position: fixed;
+    top: 360px;
+    left: 580px;
+
+}
+
+#home{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 10px;
+    left: 11%;
+    background-color: #ffffff00;
+    border: 0px;
+    background-image: url(photos/arrow.png);
+    z-index: 999;
+    background-size: cover;
+}
+
+button{
+    cursor: pointer;
+}
+
+#call{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0px;
+    background-image: url(photos/phone-call.png);
+    background-color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    position: fixed;
+    top: 330px;
+    left: 560px;
+}
+
+#message{
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    background-image: url(photos/chat.png);
+    background-color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    position: fixed;
+    top: 330px;
+    left: 625px;
+}
+
+#vedio{
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    background-image: url(photos/video-camera.png);
+    background-color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    position: fixed;
+    top: 330px;
+    left: 690px;
+}
+
+
+
+
+
+
+
+
+
+

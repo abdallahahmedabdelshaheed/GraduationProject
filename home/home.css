@@ -1,0 +1,671 @@
+@font-face {
+  font-family: newfont;
+  src: url(Outfit-VariableFont_wght.ttf);
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0px;
+  font-family: monospace;
+}
+
+#body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  background-image: linear-gradient(225deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+#menu {
+  width: 250px;
+  height: 100%;
+  border-right: 1px solid #1b1b46;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#menu a {
+  color: black;
+}
+
+#menupart {
+  position: absolute;
+  left: 0px;
+  top: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  text-align: right;
+}
+
+#homebutton1 {
+  width: 170px;
+  height: 50px;
+  position: relative;
+  right: 0px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #1b1b46;
+  border-right: 0px;
+  font-size: 14px;
+}
+
+#homebutton1::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 0px;
+  height: 100%;
+  background-color: #1b1b46;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: white;
+  transition: all 0.5s;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+#homebutton1:hover::after {
+  width: 100%;
+  content: "home";
+}
+#homebutton2 {
+  width: 170px;
+  height: 50px;
+  position: relative;
+  right: 0px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #1b1b46;
+  border-right: 0px;
+  font-size: 14px;
+}
+
+#homebutton2::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 0px;
+  height: 100%;
+  background-color: #1b1b46;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: white;
+  transition: all 0.5s;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+#homebutton2:hover::after {
+  width: 100%;
+  content: "histoury";
+}
+#homebutton3 {
+  width: 170px;
+  height: 50px;
+  position: relative;
+  right: 0px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #1b1b46;
+  border-right: 0px;
+  font-size: 14px;
+}
+
+#homebutton3::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 0px;
+  height: 100%;
+  background-color: #1b1b46;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: white;
+  transition: all 0.5s;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+#homebutton3:hover::after {
+  width: 100%;
+  content: "setting";
+}
+
+#menutop {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  top: 50px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+#logo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  background-image: url(photos/contact-book.png);
+}
+
+#menutoph1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 85%;
+  height: 80px;
+  text-align: right;
+}
+
+#menutoph1 h1 {
+  font-size: 22px;
+}
+
+#navshrinkcontaner {
+  position: fixed;
+  width: 45px;
+  height: 40px;
+  left: 0px;
+  top: 20px;
+  border: 1px solid #1b1b46;
+  background-color: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+#nav {
+  width: 650px;
+  height: 70px;
+  overflow: hidden;
+  position: fixed;
+  top: 30px;
+  left: 250px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  background-color: #ffffff;
+
+}
+
+#navbutton {
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  background-image: url(photos/three-dots.png);
+  transition: all 0.5s;
+  background-size: cover;
+  border: 0px;
+  border-radius: 20px;
+  position: fixed;
+  top: 35px;
+  left: 800px;
+}
+
+#navbutton:hover {
+  background-color: rgb(204, 204, 204);
+}
+
+#image {
+  width: 60px;
+  height: 60px;
+  background-image: url(photos/user.png);
+  background-size: cover;
+  margin-right: 50px;
+  background-color: #ffffff;
+
+}
+
+#nav h1 {
+  color: #1b1b46;
+  position: relative;
+  bottom: 15px;
+  left: 10px;
+}
+
+#nav h5 {
+  color: #1b1b46;
+  position: fixed;
+  top: 50px;
+  left: 420px;
+}
+
+#contacts {
+  width: 700px;
+  height: 500px;
+  position: fixed;
+  top: 120px;
+  left: 300px;
+  border-radius: 10px;
+  border: 1px solid #1b1b46;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 0px #1b1b46;
+  overflow: auto;
+  background-color: #ffffff;
+
+}
+
+.contacts {
+  width: 98%;
+  height: 70px;
+  border: 1px solid #1b1b46;
+  margin: 5px auto;
+  border-radius: 5px;
+  position: relative;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.contacts:hover {
+  background-color: #cacaca;
+}
+
+.contacts img {
+  width: 60px;
+  height: 60px;
+  margin: 5px 20px;
+}
+
+.contacts h1 {
+  color: #1b1b46;
+  display: inline-block;
+  font-family: newfont;
+  text-decoration: none;
+  position: absolute;
+  top: -15px;
+  left: 130px;
+}
+
+.contacts h5 {
+  color: #1d1d1d;
+  display: inline-block;
+  font-family: newfont;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  left: 130px;
+  font-size: 15px;
+}
+
+.contacts button {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0);
+  width: 35px;
+  height: 35px;
+  border: 0px;
+  border-radius: 20px;
+  background-image: url(photos/three-dots.png);
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  transition: all 0.5s;
+}
+
+.contacts button:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+#contacts::-webkit-scrollbar {
+  width: 10px;
+}
+
+#contacts::-webkit-scrollbar-thumb {
+  background-color: #7a776f;
+  border-radius: 10px;
+}
+
+#contacts::-webkit-scrollbar-track {
+  background-color: #ffffff00;
+  border-radius: 10px;
+}
+
+#addcontact {
+  width: 350px;
+  height: 100%;
+  background-image: linear-gradient(225deg, #04befe 0%, #4481eb 49%, #111183 100%);
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px gray;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-11-6 9:57:6
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#addcontact h1 {
+  font-size: 30px;
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  font-family: newfont;
+}
+
+#addcontact h2 {
+  font-size: 25px;
+  font-family: newfont;
+  margin-left: 10px;
+}
+
+#addcontact input {
+  width: 97%;
+  height: 50px;
+  border-radius: 5px;
+  border: 0px;
+  text-align: center;
+  font-size: 17px;
+}
+
+#addcontact input:focus {
+  outline: 0px;
+  color: rgb(0, 0, 0);
+}
+
+#addbutton {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  background-image: linear-gradient(315deg, #7950f2 5%, #748ffc 95%);
+  border: 1px solid #555555;
+  position: relative;
+  left: 100px;
+  top: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  transition: 0.5s;
+  color: white;
+}
+
+#addbutton:hover {
+  box-shadow: 0px 0px 10px 1px rgb(61, 61, 61);
+  transform: scale(1.2);
+  color: white;
+}
+
+#addcontactshrink{
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff00;
+  border-radius: 2px;
+  background-size: cover;
+  padding: 2.5px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.6s;
+}
+
+#addcontactshrink:hover{
+  transform: rotate(90deg);
+
+
+}
+
+#addcontactshrinkdiv{
+  width: 32px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 3px;
+  position: relative;
+
+}
+
+#addcontactshrinkdiv::after{
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 3px;
+  top: -11px;
+
+
+}
+
+#addcontactshrinkdiv::before{
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 3px;
+  top: 11px;
+
+
+}
+
+
+@media only screen and (max-width:1360px){
+
+  #addcontact{
+    display: none;
+  }
+
+  #contacts{
+    width: 75%;
+
+  }
+
+
+
+
+}
+
+@media only screen and (max-width:1225px){
+
+  #contacts{
+    width: 70%;
+
+  }
+
+
+}
+
+@media only screen and (max-width:1050px){
+
+  #contacts{
+    width: 65%;
+
+  }
+
+
+}
+
+@media only screen and (max-width:900px){
+
+  #contacts{
+    width: 60%;
+
+  }
+
+
+}
+
+@media only screen and (max-width:850px){
+
+  #menu{
+    width: 200px;
+
+
+  }
+  #logo{
+    display: none;
+
+  }
+
+  #nav{
+    left: 160px;
+  }
+
+  #contacts{
+    left: 230px;
+
+  }
+
+  #navbutton{
+    display: none;
+
+
+  }
+
+
+}
+
+@media only screen and (max-width:770px){
+
+  .contacts img{
+    display: none;
+  }
+
+  .contacts h1{
+    left: 10px;
+    font-size: 25px;
+
+  }
+  .contacts h5{
+    left: 10px;
+
+
+  }
+
+}
+
+@media only screen and (max-width:650px){
+
+  #nav h5{
+    display: none;
+
+  }
+
+
+}
+
+@media only screen and (max-width:600px){
+
+  #contacts{
+    width: 50%;
+
+  }
+
+  #nav h1{
+    left: -40px;
+
+  }
+
+  .contacts h1{
+    left: 10px;
+    font-size: 16px;
+    top: 5px;
+  }
+  .contacts h5{
+    left: 10px;
+    font-size: 11px;
+
+  }
+
+}
+
+@media only screen and (max-width:499px){
+
+  #menu{
+    width: 100px;
+
+  }
+
+  #homebutton1{
+    width: 90px;
+    left: 0px;
+  }
+
+  #homebutton2{
+    width: 90px;
+    left: 0px;
+  }
+
+  #nav{
+    left: 80px;
+  }
+
+  #contacts{
+    left: 120px;
+    width: 250px;
+  }
+
+  #image{
+    display: none;
+  }
+
+  #nav h1{
+    left: 0px;
+
+  }
+
+}
+
+
+
+
